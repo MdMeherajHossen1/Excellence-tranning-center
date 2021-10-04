@@ -29,6 +29,7 @@ function App() {
             <Route exact path="/" >
               <Header></Header>
               <Courses></Courses>
+              <About></About>
               <Footer></Footer>
             </Route>
             <Route exact path="/home" >

@@ -3,7 +3,7 @@
  * You can find courses by different Author
  
 
-## Live Site ('')
+## Live Site ('https://excellence-tranning-centre.netlify.app/')
 
 ### About Projects production
 
