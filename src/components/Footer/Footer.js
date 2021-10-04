@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Footer.css'
 const Footer = () => {
     return (
-        <div className="footer-bg">
+        <div className="footer-bg pb-3">
             <h3 className="pt-5">ExcellenceTrainingCentre.com</h3>
             <div>
                 <NavLink to="/home" className="selected"> Home </NavLink>

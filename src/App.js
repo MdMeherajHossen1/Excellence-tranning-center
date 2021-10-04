@@ -4,9 +4,10 @@ import Courses from './components/Courses/Courses';
 import React, { useEffect, useState, createContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, useParams } from "react-router-dom";
 import Services from './components/Services/Services';
-import Cart from './components/Cart/Cart';
+import Details from './components/Details/Details';
 import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound'
+import About from './components/About/About';
 
 
 export const CoursesContext = createContext([])
@@ -23,25 +24,35 @@ function App() {
     <CoursesContext.Provider value={courses}>
       <div className="App">
         <Router>
-          <Header></Header>
+
           <Switch>
             <Route exact path="/" >
+              <Header></Header>
               <Courses></Courses>
               <Footer></Footer>
             </Route>
             <Route exact path="/home" >
+              <Header></Header>
               <Courses></Courses>
+              <About></About>
               <Footer></Footer>
             </Route>
             <Route exact path="/services" >
+              <Header></Header>
               <Services></Services>
               <Footer></Footer>
             </Route>
             <Route exact path="/cart/:id" >
-              <Cart></Cart>
+              <Header></Header>
+              <Details></Details>
               <Footer></Footer>
             </Route>
-            <Route path="*">
+            <Route exact path="/about">
+              <Header></Header>
+              <About></About>
+              <Footer></Footer>
+            </Route>
+            <Route exact path="*">
               <NotFound></NotFound>
             </Route>
           </Switch>

@@ -20,7 +20,7 @@ const Course = (props) => {
                             <h6>Author: {tutor}</h6>
                             <p>Lessions: {tutorial}</p>
                             <h4>Price: {price} $</h4>
-                            <button onClick={() => handleDetails(id)} className="btn btn-success col-12">ADD TO CART</button>
+                            <button onClick={() => handleDetails(id)} className="btn btn-success col-12">Details</button>
                         </Card.Text>
                     </Card.Body>
                 </Card>

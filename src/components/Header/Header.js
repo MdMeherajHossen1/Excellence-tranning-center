@@ -14,12 +14,11 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <NavLink to="/home"> <button className="btn btn-outline-light">Home</button> </NavLink>
-                            <NavLink to="/services"> <button className="btn btn-outline-light">Services</button> </NavLink>
-                            <NavLink to="/cart/:id"> <button className="btn btn-outline-light">Cart</button> </NavLink>
+                            <NavLink to="/home" className="selected"> Home </NavLink>
+                            <NavLink to="/services" className="selected">Services </NavLink>
+                            <NavLink to="/cart/:id" className="selected"> details </NavLink>
+                            <NavLink to="/about" className="selected"> About </NavLink>
 
-
-                            <Nav.Link href="#pricing">About</Nav.Link>
 
                         </Nav>
 
@@ -31,6 +30,7 @@ const Header = () => {
                 <p><small>We are offering you an international Standrad Quality Courses of Every faculty of Management</small></p>
                 <button className="btn btn-success">About us</button>
             </div>
+
         </div>
     );
 };
