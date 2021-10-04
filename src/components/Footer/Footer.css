@@ -1,0 +1,40 @@
+
+
+.footer-bg{
+    background-image: url('/src/footer.jpg');
+    
+    background-position: center ;
+    color: white;
+}
+.selected{
+    color: lightseagreen;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+
+
+.fa-facebook{
+    color: #3b5998;
+    font-size:30px;
+    margin-right: 10px;
+} 
+.fa-twitter{
+    color: #55acee;
+    font-size:30px;
+    margin-right: 10px;
+}
+.fa-instagram{
+color: #3f729b;
+font-size:30px;
+    margin-right: 10px;
+}
+ .fa-youtube {
+    font-size:30px;
+    margin-right: 10px;
+    color: #cd201f	;
+}
+.fa-heart{
+    color: red;
+}

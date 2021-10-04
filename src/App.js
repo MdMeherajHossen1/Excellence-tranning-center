@@ -5,6 +5,8 @@ import React, { useEffect, useState, createContext } from 'react';
 import { BrowserRouter as Router, Switch, Route, useParams } from "react-router-dom";
 import Services from './components/Services/Services';
 import Cart from './components/Cart/Cart';
+import Footer from './components/Footer/Footer';
+import NotFound from './components/NotFound/NotFound'
 
 
 export const CoursesContext = createContext([])
@@ -25,17 +27,23 @@ function App() {
           <Switch>
             <Route exact path="/" >
               <Courses></Courses>
+              <Footer></Footer>
             </Route>
             <Route exact path="/home" >
               <Courses></Courses>
+              <Footer></Footer>
             </Route>
             <Route exact path="/services" >
               <Services></Services>
+              <Footer></Footer>
             </Route>
             <Route exact path="/cart/:id" >
               <Cart></Cart>
+              <Footer></Footer>
             </Route>
-
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
           </Switch>
         </Router>
 
