@@ -1,0 +1,23 @@
+
+
+.custom-card{
+    background-color: white;
+    box-shadow: 3px 3px 6px lightgrey;
+    text-align: left;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+.img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+.custom-card:hover{
+    border: 2px solid chartreuse;
+}
+.card-title{
+    color: #33805B;
+    font-weight: bold;
+}
